@@ -1,5 +1,5 @@
 # mito_IP_SNPs
-Quantifying the incidence of single nucleotide polymorphisms (SNPs) of neuron-specific mitochondrial from mouse brain tissue
+Quantifying the incidence of single nucleotide polymorphisms (SNPs) of neuron-specific mitochondrial from mouse brain tissue \
 A collaboration between Ina Kirmes (Zuryn Lab) and the Bartlett Lab, Queensland Brain Institute (QBI)
 
 This repository describes our workflow for SNP analysis, from the filtering and processing of raw sequencing data to the creation of count tables for biological intepretation
