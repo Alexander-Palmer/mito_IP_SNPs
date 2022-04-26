@@ -16,17 +16,20 @@ This repository describes our workflow for SNP analysis, from the filtering and 
 * NCBI genome workbench (v3.7.1)
 
 ## Pipeline
-_C. elegans_ reference genome: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.23/
+_M. musculus_ reference genome: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.23/ \
+_M. musculus_ mtDNA annotation: **mtDNA_features.csv**
 
 1. **fastQC.sh**: _initial assessment of read quality_
 2. **cutadapt.sh**: _removal of sequencing adapters_
 3. **fastQC.sh**: _assessment of read quality folowing adapter removal_
 4. **bbtools.sh**: _removal of reads with unmatched names_
-5. **bwa.sh**: _index and alignment of reads to the_ C. elegans _genome_
+5. **bwa.sh**: _index and alignment of reads to the_ M. musculus _genome_
 6. **samtools.sh**: _sort reads by coordinate for duplicate marking_
 7. **picard.sh**: _mark duplicates and remove empty reads_
 8. **qualimap.sh**: _assess quality of processed reads_
 9. **mutect2.sh**: _create genome reference index, add arbitrary read groups, validate and index input, and run mutect2 program_
+10. **NCBI genome workbench**: _export count table of SNPs including relevant information_
+11. **statistical_analysis_and_visualisation.R**: _investigate SNPs significantly enriched between libraries_ 
 
 ## Citation
 Manuscript currently pre-submission
