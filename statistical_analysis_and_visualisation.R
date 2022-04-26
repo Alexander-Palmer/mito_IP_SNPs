@@ -95,6 +95,20 @@ data_out <- lapply(data, function(df) {
   return(df)
 })
 
+write.xlsx(S1825, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S1825 (Non-learner)", append=T, row.names=F)
+write.xlsx(S3450, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3450 (Non-learner)", append=T, row.names=F)
+write.xlsx(S3451, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3451 (Non-learner)", append=T, row.names=F)
+write.xlsx(S3454, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3454 (Non-learner)", append=T, row.names=F)
+write.xlsx(S3460, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3460 (Non-learner)", append=T, row.names=F)
+write.xlsx(S3476, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3476 (Non-learner)", append=T, row.names=F)
+
+write.xlsx(S1829, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S1829 (Learner)", append=T, row.names=F)
+write.xlsx(S3444, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3444 (Learner)", append=T, row.names=F)
+write.xlsx(S3446, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3446 (Learner)", append=T, row.names=F)
+write.xlsx(S3453, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3453 (Learner)", append=T, row.names=F)
+write.xlsx(S3458, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3458 (Learner)", append=T, row.names=F)
+write.xlsx(S3461, file="Mouse brain individual mtDNA SNP counts.xlsx", sheetName = "S3461 (Learner)", append=T, row.names=F)
+
 S1825 <- as.data.frame(data_out[1])
 S1829 <- as.data.frame(data_out[2])
 S3444 <- as.data.frame(data_out[3])
@@ -646,14 +660,14 @@ ggplot(gene_list_norm_combined, aes(x=Gene, y=Count, fill=Gene)) +
 ################################################################################
 ################################################################################ 
 #Data output for further analysis
-write.xlsx(sample_count, file="Mouse brain mtDNA mRNA-seq.xlsx", sheetName = "SNP count", append=T, row.names=F)
-write.xlsx(library_count, file="Mouse brain mtDNA mRNA-seq.xlsx", sheetName = "Library size", append=T, row.names=F)
-write.xlsx(norm_count, file="Mouse brain mtDNA mRNA-seq.xlsx", sheetName = "SNP count (normalised)", append=T, row.names=F)
+write.xlsx(sample_count, file="Mouse brain combined mtDNA SNP counts.xlsx", sheetName = "SNP count", append=T, row.names=F)
+write.xlsx(library_count, file="Mouse brain combined mtDNA SNP counts.xlsx", sheetName = "Library size", append=T, row.names=F)
+write.xlsx(norm_count, file="Mouse brain combined mtDNA SNP counts.xlsx", sheetName = "SNP count (normalised)", append=T, row.names=F)
 
-write.xlsx(SNP_list, file="Mouse brain mtDNA mRNA-seq.xlsx", sheetName = "SNP alleles", append=T, row.names=F)
+write.xlsx(SNP_list, file="Mouse brain combined mtDNA SNP counts.xlsx", sheetName = "SNP alleles", append=T, row.names=F)
 
-write.xlsx(features, file="Mouse brain mtDNA mRNA-seq.xlsx", sheetName = "mtDNA features", append=T, row.names=F)
-write.xlsx(gene_list, file="Mouse brain mtDNA mRNA-seq.xlsx", sheetName = "Genes hits", append=T, row.names=F)
-write.xlsx(gene_list_norm, file="Mouse brain mtDNA mRNA-seq.xlsx", sheetName = "Gene hits (normalised)", append=T, row.names=F)
+write.xlsx(features, file="Mouse brain combined mtDNA SNP counts.xlsx", sheetName = "mtDNA features", append=T, row.names=F)
+write.xlsx(gene_list, file="Mouse brain combined mtDNA SNP counts.xlsx", sheetName = "Genes hits", append=T, row.names=F)
+write.xlsx(gene_list_norm, file="Mouse brain combined mtDNA SNP counts.xlsx", sheetName = "Gene hits (normalised)", append=T, row.names=F)
 
 
