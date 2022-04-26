@@ -27,7 +27,7 @@ _M. musculus_ mtDNA annotation: **mtDNA_features.csv**
 6. **samtools.sh**: _sort reads by coordinate for duplicate marking_
 7. **picard.sh**: _mark duplicates and remove empty reads_
 8. **qualimap.sh**: _assess quality of processed reads_
-9. **mutect2.sh**: _create genome reference index, add arbitrary read groups, validate and index input, and run mutect2 program_
+9. **mutect2.sh**: _create genome reference index, add arbitrary read groups, validate and index input, and run mutect2_
 10. **NCBI genome workbench**: _export count table of SNPs including relevant information_
 11. **statistical_analysis_and_visualisation.R**: _investigate SNPs significantly enriched between libraries_ 
 
