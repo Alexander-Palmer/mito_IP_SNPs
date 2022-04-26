@@ -1,5 +1,6 @@
 ###Determining SNP frequency of mouse brain tissues###
-###For Ina Kirmes and Bartlett Lab, QBI###
+###For Ina Kirmes and Bartlett Lab, Queensland Brain Institute (QBI), Australia###
+###Written by Alexander Palmer, BAdvSci (Hon I)###
 
 ##########
 #Packages#
