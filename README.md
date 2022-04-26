@@ -19,9 +19,9 @@ This repository describes our workflow for SNP analysis, from the filtering and 
 _M. musculus_ reference genome: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.23/ \
 _M. musculus_ mtDNA annotation: **mtDNA_features.csv**
 
-1. **fastQC.sh**: _initial assessment of read quality_
+1. **fastQC(1).sh**: _initial assessment of read quality_
 2. **cutadapt.sh**: _removal of sequencing adapters_
-3. **fastQC.sh**: _assessment of read quality folowing adapter removal_
+3. **fastQC(2).sh**: _assessment of read quality folowing adapter removal_
 4. **bbtools.sh**: _removal of reads with unmatched names_
 5. **bwa.sh**: _index and alignment of reads to the_ M. musculus _genome_
 6. **samtools.sh**: _sort reads by coordinate for duplicate marking_
