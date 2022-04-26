@@ -32,5 +32,5 @@ _M. musculus_ mtDNA annotation: **mtDNA_features.csv**
 11. **statistical_analysis_and_visualisation.R**: _investigate SNPs significantly enriched between libraries_ 
 
 ## Citation
-Manuscript currently pre-submission
+Manuscript currently pre-submission \
 Written by Alexander Palmer for Ina Kirmes (Zuryn Lab) and Bartlett Lab, Queensland Brain Institute (QBI), Australia (2022)
